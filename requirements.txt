@@ -7,3 +7,5 @@ jupyter
 ipykernel
 plotly
 xgboost
+fastapi
+uvicorn
