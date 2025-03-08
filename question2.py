@@ -11,7 +11,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error, accuracy_score
 from sklearn.metrics import confusion_matrix
-import plotly
+
 from OrdinaryLeastSquaresRegression import OrdinaryLeastSquaresRegression
 
 def generate(problem, n_samples, n_features):

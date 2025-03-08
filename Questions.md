@@ -5,14 +5,14 @@
 
 Requirements:
 
--   python \>= 3.7
+-   python &gt;= 3.7
 
--   pandas \>= 1.2.4
+-   pandas &gt;= 1.2.4
 
 **Question 1**
 
-*The aim of question 1 is to check if all "Safety Line data scientist
-daily tasks" are mastered, from processing raw data to model building.*
+*The aim of question 1 is to check if all “Safety Line data scientist
+daily tasks” are mastered, from processing raw data to model building.*
 
 Simulated flight signals representing fuel flow (in pound per second),
 altitude (in feet), wind (in knots) and speed (in km/h) are stored in
@@ -25,18 +25,33 @@ dataframe stores signals in the following structure:
 
 Dataframes can be read with pickle reader method, for exemple:
 
-output = pd.read_pickle(\"signals_altitude.pkl\")
+output = pd.read\_pickle("signals\_altitude.pkl")
 
-For example, signals of the flight #44 are stored in the 44^th^ column.
+For example, signals of the flight \#44 are stored in the
+44<sup>th</sup> column.
 
-  ---------------------------------------------------------------------------------------------------------
-  ![](media/image1.png){width="2.4778094925634297in"   ![](media/image2.png){width="2.4795450568678916in"
-  height="1.6538068678915137in"}                       height="1.676149387576553in"}
-  ---------------------------------------------------- ----------------------------------------------------
-  ![](media/image3.png){width="2.5491568241469817in"   ![](media/image4.png){width="2.6014140419947505in"
-  height="1.672522965879265in"}                        height="1.6968318022747158in"}
-
-  ---------------------------------------------------------------------------------------------------------
+<table>
+<colgroup>
+<col style="width: 49%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><img src="./media/media/image1.png"
+style="width:2.47781in;height:1.65381in" /></th>
+<th><img src="./media/media/image2.png"
+style="width:2.47955in;height:1.67615in" /></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><img src="./media/media/image3.png"
+style="width:2.54916in;height:1.67252in" /></td>
+<td><img src="./media/media/image4.png"
+style="width:2.60141in;height:1.69683in" /></td>
+</tr>
+</tbody>
+</table>
 
 Note that time vector can be different from one flight number to
 another.
@@ -88,18 +103,18 @@ exercise is doable even without mastering Docker and flask*
 
     -   /process: generates a dataset, builds a model and returns a json
         containing the statistics, the error rate and the final
-        predictions. The parameters n_samples, n_features and problem
+        predictions. The parameters n\_samples, n\_features and problem
         will be the inputs.
 
     -   /classification/process generates a classification dataset,
         builds a model and returns a json containing the statistics, the
-        error rate and the final predictions. The parameters n_samples
-        and n_features will be the inputs.
+        error rate and the final predictions. The parameters n\_samples
+        and n\_features will be the inputs.
 
     -   /regression/process generates a regression dataset, builds a
         model and returns a json containing the statistics, the error
-        rate and the final predictions. The parameters n_samples and
-        n_features will be the inputs.
+        rate and the final predictions. The parameters n\_samples and
+        n\_features will be the inputs.
 
 -   Question 2.3. Build a Docker image from the previous API. Expected
     result: the Dockerfile and other relevant files
